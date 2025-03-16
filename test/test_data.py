@@ -18,7 +18,7 @@ def test_data_loaders_output_type(data_loaders):
 
     assert isinstance(images, torch.Tensor), "images should be a Tensor"
     assert isinstance(labels, torch.Tensor), "labels should be a Tensor"
-    assert images[0].shape[-1] == 224, "The tensors returned by your dataloaders    should be 224x224. Did you ""forget to resize and/or crop?"
+    assert images[0].shape[-1] == 224, "The tensors returned by your dataloaders  should be 224x224. Did you ""forget to resize and/or crop?"
 
 def test_data_loaders_output_shape(data_loaders):
     dataiter = iter(data_loaders["train"])
